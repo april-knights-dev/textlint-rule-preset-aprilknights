@@ -1,0 +1,110 @@
+meta:
+  - title: 弁護士ドットコム固有の名称・表記ルール
+  - memo: 汎用的ではない、弁護士ドットコム固有のルールを追加する
+rules:
+  # サービス名
+  - expected: cogme
+    patterns: Cogme
+    prh: サービス名の場合は略さず表記します
+  - expected: cogme
+    patterns: /?cogme/i
+    specs:
+      - from: Cogme
+        to: cogme
+      - from: COGME
+        to: cogme
+  - expected: cogme cup
+    patterns: /cogme ?cup/i
+    specs:
+      - from: Cogme Cup
+        to: cogme cup
+      - from: COGME CUP
+        to: cogme cup
+  - expected: cogme club
+    patterns: /cogme ?club/i
+    specs:
+      - from: Cogme Club
+        to: cogme club
+      - from: COGME CLUB
+        to: cogme club
+  # 機能
+  - expected: 一括見積り
+    patterns: 一括見積もり
+    prh: 機能名
+  - expected: 感謝の声をおくる
+    patterns: /感謝の声を(送る|寄せる|投稿する)/
+    prh: 機能名
+  - expected: みんなの法律相談
+    patterns:
+      - みん法
+      - 皆の法律相談
+    prh: 機能名
+  # プラン
+  - expected: $1ライトプラン
+    patterns: /(クラウドサイン.*)(Lightプラン)/
+    specs:
+      - from: クラウドサインの契約画面で、Lightプランをお選びください
+        to: クラウドサインの契約画面で、ライトプランをお選びください
+    prh: 末に「プラン」をつける場合はカタカナ表記にします（「プラン」をつけない場合は英語表記でも可）
+  - expected: エンタープライズプラン$2
+    patterns: /(Enterpriseプラン)(.*クラウドサイン)/
+    specs:
+      - from: まずはEnterpriseプランでクラウドサインをお試しください
+        to: まずはエンタープライズプランでクラウドサインをお試しください
+    prh: 末に「プラン」をつける場合はカタカナ表記にします（「プラン」をつけない場合は英語表記でも可）
+  # 用語
+  - expected: スマートフォン
+    patterns:
+      - スマートホン
+      - スマホ
+      - スマフォ
+  - expected: ユーザー
+    pattern: /ユーザ(?!ー|ビリティ|セグメント)/
+    specs:
+      - from: ユーザ
+        to: ユーザー
+  - expected: サーバー
+    pattern: /サーバ(?!ー)/
+    specs:
+      - from: サーバ
+        to: サーバー
+  - expected: ブラウザ
+    pattern: ブラウザー
+  - expected: セキュリティ
+    pattern: セキュリティー
+  - expected: ウェブサイト
+    pattern: /(web|Web|WEB)サイト/
+    specs:
+      - from: webサイト
+        to: ウェブサイト
+  - expected: カテゴリ
+    patterns: カテゴリー
+  - expected: 二割司法
+    patterns: 2割司法
+  - expected: コミュニティ
+    patterns: コミュニティー
+  - expected: Google
+    patterns: /(GOOGLE|google)/
+    specs:
+      - from: GOOGLE
+        to: Google
+  - expected: Amazon
+    patterns: /(AMAZON|amazon)/
+    specs:
+      - from: AMAZON
+        to: Amazon
+  - expected: Facebook
+    patterns: /(FACEBOOK|facebook)/
+    specs:
+      - from: FACEBOOK
+        to: Facebook
+  - expected: Apple
+    patterns: /(APPLE|apple)/
+    specs:
+      - from: APPLE
+        to: Apple
+  - expected: Yahoo
+    patterns: /(YAHOO|yahoo)/
+    specs:
+      - from: YAHOO
+        to: Yahoo
