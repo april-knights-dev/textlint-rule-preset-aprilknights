@@ -7,7 +7,6 @@ rules:
     patterns: Cogme
     prh: サービス名の場合は略さず表記します
   - expected: cogme
-    patterns: /?cogme/i
     specs:
       - from: Cogme
         to: cogme

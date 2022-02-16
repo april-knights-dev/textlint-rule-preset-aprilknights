@@ -4,7 +4,7 @@ const prh = require("textlint-rule-prh");
 const prhPaths = [
   "/../dict/prh_mistakes.yml",
   "/../dict/prh_redundancy.yml",
-  "/../dict/prh_cogme.yml",
+  "/../dict/prh_aprilknights.yml",
   "/../dict/prh_writing.yml",
 ];
 

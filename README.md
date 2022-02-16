@@ -1,8 +1,8 @@
-# textlint-rule-preset-cogme
+# textlint-rule-preset-aprilknights
 
-[![Test](https://github.com/april-knights-dev/textlint-rule-preset-cogme/actions/workflows/test.yml/badge.svg)](https://github.com/april-knights-dev/textlint-rule-preset-cogme/actions/workflows/test.yml)
+[![Test](https://github.com/april-knights-dev/textlint-rule-preset-aprilknights/actions/workflows/test.yml/badge.svg)](https://github.com/april-knights-dev/textlint-rule-preset-aprilknights/actions/workflows/test.yml)
 
-cogmeで使われているtextlintプリセット
+aprilknightsで使われているtextlintプリセット
 
 ## Installation
 
@@ -18,7 +18,7 @@ npm install textlint-rule-preset-bengo4
 ```json
 {
   "rules": {
-    "preset-cogme": true
+    "preset-aprilknights": true
   }
 }
 ```

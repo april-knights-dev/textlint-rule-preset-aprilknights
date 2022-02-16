@@ -1,11 +1,11 @@
 {
-  "name": "textlint-rule-preset-coogme",
+  "name": "textlint-rule-preset-aprilknights",
   "version": "2.0.0",
-  "description": "cogmeで使われているtextlintプリセット",
+  "description": "aprilknightsで使われているtextlintプリセット",
   "main": "lib/index.js",
   "author": "AprilKnights, Inc.",
   "license": "MIT",
-  "homepage": "https://github.com/april-knights-dev/textlint-rule-preset-cogme#readme",
+  "homepage": "https://github.com/april-knights-dev/textlint-rule-preset-aprilknights#readme",
   "scripts": {
     "example": "npm run build && cd example && npm it",
     "test": "textlint-scripts test",
@@ -15,12 +15,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/april-knights-dev/textlint-rule-preset-cogme.git"
+    "url": "https://github.com/april-knights-dev/textlint-rule-preset-aprilknights.git"
   },
   "keywords": [
     "textlint",
     "textlintrule",
-    "cogme"
+    "aprilknights"
   ],
   "dependencies": {
     "@textlint-rule/textlint-rule-no-unmatched-pair": "^1.0.8",
