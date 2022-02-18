@@ -70,5 +70,8 @@
     "branches": [
       "main"
     ]
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/april-knights-dev"
   }
 }
