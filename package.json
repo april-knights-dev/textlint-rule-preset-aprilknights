@@ -5,7 +5,6 @@
   "main": "lib/index.js",
   "author": "AprilKnights, Inc.",
   "license": "MIT",
-  "private": true,
   "homepage": "https://github.com/april-knights-dev/textlint-rule-preset-aprilknights#readme",
   "scripts": {
     "example": "npm run build && cd example && npm it",
