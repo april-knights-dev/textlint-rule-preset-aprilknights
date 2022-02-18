@@ -9,7 +9,7 @@ aprilknightsで使われているtextlintプリセット
 Install with [npm](https://www.npmjs.com/):
 
 ```sh
-npm install textlint-rule-preset-bengo4
+npm install textlint-rule-preset-aprilknights
 ```
 ## Usage
 
