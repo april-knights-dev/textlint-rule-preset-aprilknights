@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/april-knights-dev/textlint-rule-preset-aprilknights/compare/v1.0.0...v1.0.1) (2022-02-18)
+
+
+### Bug Fixes
+
+* package.json release.ymlをgit clone時に戻す ([3ad4ab4](https://github.com/april-knights-dev/textlint-rule-preset-aprilknights/commit/3ad4ab4eb58e3063826fe949bef08a2932bf769e))
+
 # 1.0.0 (2022-02-18)
 
 
