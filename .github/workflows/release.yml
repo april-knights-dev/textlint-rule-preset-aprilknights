@@ -1,35 +1,20 @@
-name: Release
+name: Node.js Package
 on:
-  workflow_run:
-    workflows:
-      - Test
-    branches:
-      - main
-    types:
-      - completed
-
-jobs:
   release:
-    name: Release
+    types: [created]
+jobs:
+  build:
     runs-on: ubuntu-latest
-    if: ${{ github.event.workflow_run.conclusion == 'success' }}
-
     steps:
-      - name: Checkout
-        uses: actions/checkout@v2
-        with:
-          fetch-depth: 0
-
-      - name: Setup NodeJS 14
-        uses: actions/setup-node@v2
-        with:
-          node-version: 14
-
-      - name: Install dependencies
-        run: npm ci
-
-      - name: Release
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-        run: npx semantic-release
+    - uses: actions/checkout@v2
+    # GitHub Packagesへの公開のために.npmrcファイルをセットアップ
+    - uses: actions/setup-node@v1
+      with:
+        node-version: '12.x'
+        registry-url: 'https://npm.pkg.github.com'
+    - run: |
+        npm ci
+        npm run build
+        npm publish
+      env:
+        NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}

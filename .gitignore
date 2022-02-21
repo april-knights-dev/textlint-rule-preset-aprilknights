@@ -4,3 +4,4 @@ lib/
 
 example/package-lock.json
 .history/
+.npmrc
