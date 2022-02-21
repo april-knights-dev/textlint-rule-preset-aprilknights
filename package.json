@@ -1,5 +1,5 @@
 {
-  "name": "@april-knights/textlint-rule-preset-aprilknights",
+  "name": "@april-knights-dev/textlint-rule-preset-aprilknights",
   "version": "1.0.0",
   "description": "aprilknightsで使われているtextlintプリセット",
   "main": "lib/index.js",
